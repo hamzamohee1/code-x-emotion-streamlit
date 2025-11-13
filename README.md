@@ -4,7 +4,6 @@ A powerful, easy-to-deploy emotion detection application built with Streamlit. A
 
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28-FF4B4B?style=flat-square&logo=streamlit)
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 ## 🎯 Features
 
@@ -32,9 +31,9 @@ A powerful, easy-to-deploy emotion detection application built with Streamlit. A
 - 😢 **Sadness** - Unhappy, melancholic
 - 😲 **Surprise** - Astonished, amazed
 
-## 🚀 Quick Start
+## Quick Start
 
-### Option 1: Deploy on Streamlit Cloud (Easiest)
+### Option 1: Deploy on Streamlit Cloud
 
 1. **Fork this repository** to your GitHub account
 2. **Go to Streamlit Cloud**: https://streamlit.io/cloud
@@ -45,7 +44,7 @@ A powerful, easy-to-deploy emotion detection application built with Streamlit. A
    - `HUGGING_FACE_API_KEY` - Your Hugging Face API token
 7. **Click "Deploy"**
 
-Your app will be live in minutes! 🎉
+Your app will be live in minutes! 
 
 ### Option 2: Run Locally
 
@@ -65,18 +64,6 @@ streamlit run app.py
 ```
 
 Your app will be available at: `http://localhost:8501`
-
-### Option 3: Deploy on Railway
-
-```bash
-# Push to GitHub first
-git push origin main
-
-# Go to Railway.app
-# Create new project from GitHub repo
-# Add environment variable: HUGGING_FACE_API_KEY
-# Deploy!
-```
 
 ## 📋 Requirements
 
@@ -138,13 +125,6 @@ docker run -e HUGGING_FACE_API_KEY=your_token -p 8501:8501 code-x-emotion
 - Arabic
 - Hindi
 
-## 🎨 UI Features
-
-- **Dark Theme** - Easy on the eyes with gradient accents
-- **Interactive Charts** - Plotly-powered visualizations
-- **Real-time Updates** - Instant feedback and results
-- **Responsive Design** - Works on desktop and mobile
-- **Accessibility** - Clear labels and intuitive navigation
 
 ## 📊 Emotion Detection Model
 
@@ -154,26 +134,6 @@ Uses **jihedjabnoun/wavlm-base-emotion** from Hugging Face:
 - High accuracy on diverse voice samples
 - Fast inference time
 
-## 🔐 Security & Privacy
-
-- ✅ No data stored on servers (except optional feedback)
-- ✅ Secure API key handling
-- ✅ HTTPS encryption
-- ✅ No tracking or analytics
-- ✅ Open source - inspect the code
-
-## 📁 Project Structure
-
-```
-code-x-emotion-streamlit/
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Python dependencies
-├── .streamlit/
-│   └── config.toml       # Streamlit configuration
-├── README.md             # This file
-├── LICENSE               # MIT License
-└── .gitignore           # Git ignore rules
-```
 
 ## 🛠️ Configuration
 
@@ -198,63 +158,13 @@ Edit `.streamlit/config.toml` to customize:
 - **Supported Audio Length**: Up to 30 seconds
 - **Supported Formats**: WAV, MP3, OGG, M4A
 
-## 🐛 Troubleshooting
 
-### Issue: "API key not configured"
-**Solution**: Set `HUGGING_FACE_API_KEY` environment variable
-
-### Issue: "Audio processing failed"
-**Solution**: Ensure audio is in supported format (WAV, MP3, OGG, M4A)
-
-### Issue: "Connection timeout"
-**Solution**: Check internet connection and Hugging Face API status
-
-### Issue: "Out of memory"
-**Solution**: Use shorter audio clips (< 30 seconds)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Streamlit](https://streamlit.io) - Amazing framework
-- [Hugging Face](https://huggingface.co) - Model hosting and inference
-- [Plotly](https://plotly.com) - Interactive visualizations
-- [Librosa](https://librosa.org) - Audio processing
-
-## 📞 Support
-
-- **Issues**: https://github.com/hamzamohee1/code-x-emotion-streamlit/issues
-- **Discussions**: https://github.com/hamzamohee1/code-x-emotion-streamlit/discussions
-- **Email**: Support via GitHub issues
-
-## 🚀 Roadmap
-
-- [ ] Real-time recording visualization
-- [ ] Model fine-tuning with user feedback
-- [ ] Export analysis reports
-- [ ] Voice emotion coaching
-- [ ] Mobile app version
-- [ ] Batch processing
-- [ ] Custom model support
 
 ## 📊 Statistics
 
 - **Emotions Detected**: 7
 - **Languages Supported**: 12
 - **Audio Formats**: 4
-- **Deployment Options**: 3+
 
 ## 🎯 Use Cases
 
@@ -265,16 +175,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Education**: Learn about emotions
 - **Entertainment**: Fun voice analysis
 
-## ⭐ Star History
-
-If you find this project useful, please consider giving it a star! ⭐
-
-## 🔗 Related Projects
-
-- [Code X Emotion Analyzer (Full Stack)](https://github.com/hamzamohee1/code-x-emotion-analyzer) - Full-stack version with database and authentication
-
 ---
 
 **Made with ❤️ by Code X**
 
-**Deploy now**: https://streamlit.io/cloud
