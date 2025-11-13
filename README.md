@@ -81,12 +81,6 @@ cd code-x-emotion-streamlit
 pip install -r requirements.txt
 ```
 
-### Docker
-
-```bash
-docker build -t code-x-emotion .
-docker run -e HUGGING_FACE_API_KEY=your_token -p 8501:8501 code-x-emotion
-```
 
 ## 📖 Usage
 
